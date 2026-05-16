@@ -24,3 +24,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Layout da app */
+.app-bg {
+  min-height: 100vh;
+  padding: 24px 16px;
+}
+
+@media (max-width: 768px) {
+  .app-bg {
+    padding: 16px 12px;
+  }
+}
+
+/* Ajustes de touch target e texto em telas pequenas */
+@media (max-width: 480px) {
+  .app-btn-row {
+    flex-direction: column;
+  }
+
+  .app-pre {
+    font-size: 11px !important;
+  }
+}
